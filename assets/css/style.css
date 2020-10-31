@@ -1081,9 +1081,21 @@ select {
   left: 0;
   overflow: hidden;
   z-index: -100;
-  width: 100%;
-  height: auto;
-  aspect-ratio: attr(width) / attr(height);
+ /* Set rules to fill background */
+ min-height: 100%;
+ min-width: 1024px;
+ 
+ /* Set up proportionate scaling */
+ width: 100%;
+ height: auto;
+ 
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .videoBgWrapper {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
 
 
