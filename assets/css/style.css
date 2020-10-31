@@ -1081,7 +1081,8 @@ select {
   left: 0;
   overflow: hidden;
   z-index: -100;
- 
+  max-width: 100%;
+  height: auto;
 }
 
 
